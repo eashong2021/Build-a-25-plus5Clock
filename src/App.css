@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #797a22c2;
+  display: flex;
+  font-family: 'Overlock', sans-serif;
+  justify-content: center;
+}
+
+h2,
+h3 {
+  color: #191919;
+  font-family: 'Righteous', sans-serif;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+button {
+  background: #83693A;
+  border:none;
+  border-radius: 3px;
+  color: white;
+  padding: 5px;
+}
+
+button:hover {
+  background: rgba(131, 106, 58, 0.753);
+  cursor: pointer;
+}
+
+button:active {
+  background: rgba(131, 106, 58, 0.308);
+}
+
+
+.app-container {
+  margin-top: 100px;
+  background: #489c21c9;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.time-display {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px 0 5px
+}
+
+.start-stop-reset-container {
+  display: flex;
+  justify-content: center;
+  transform: scale(2);
+}
+
+.start-stop-reset-container>button,
+.buttons-container>button {
+  margin: 7px;
+}
+
+.sesion-break-length-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+.buttons-container > button {
+  display:table;
+  font-size: 1.6em;
+  font-weight: bold;
+  height: 40px;
+  vertical-align: middle;
+  width: 40px;
+}
+
+.label-buttons-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9px;
+}
+
+#time-left,
+#session-length,
+#break-length {
+  font-size: 2.5em;
+}
+
+
+
+
+@media only screen and (min-width: 480px) {
+
+  #root {
+      max-width: 600px;
+      width: 70%;
+  }
+
+  h2 {
+      font-size: 1.9em;
+  }
+
+  h3 {
+      font-size: 1.5em;
+  }
+
+  .buttons-container > button {
+      font-size: 1.5em;
+  }
+
+  .sesion-break-length-container {
+      flex-direction: row;
+  }
+
+}
+
+@media only screen and (min-width: 1220px) {
+  h2 {
+      font-size: 2em;
+  }
+
+  h3 {
+      font-size: 1.6em;
+  }
+
+  .buttons-container > button {
+      font-size: 1.6em;
+  }
+}
